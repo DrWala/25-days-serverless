@@ -17,15 +17,16 @@ namespace serverless_day1
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            int rand = new Random().Next(5);
+            int rand = new Random().Next(4);
+            log.LogInformation($"Random: {rand}");
             switch(rand)
             {
-                case 1: return new OkObjectResult("נ");
-                case 2:
+                case 0: return new OkObjectResult("נ");
+                case 1:
                     return new OkObjectResult("ג");
-                case 3:
+                case 2:
                     return new OkObjectResult("ה") ;
-                case 4:
+                case 3:
                     return new OkObjectResult("ש");
             }
             return new BadRequestObjectResult("Well well well...");
