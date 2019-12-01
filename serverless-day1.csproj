@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AzureFunctionsVersion>2</AzureFunctionsVersion>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <RootNamespace>serverless_day1</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
