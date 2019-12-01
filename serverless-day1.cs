@@ -14,7 +14,7 @@ namespace serverless_day1
     {
         [FunctionName("serverless_day1")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
             int rand = new Random().Next(4);
